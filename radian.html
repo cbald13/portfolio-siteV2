@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8" />
+    <title>Chris Baldesarra | Design</title>
+    <!-- Set IE's rendering engine so your site looks good on IE (lower versions) -->   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Order that search engine to index page and follow links on it -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Scaling behavior for multi-touch devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Description and keywords so people can find you -->
+    <meta name="description" content="short description here">
+    <meta name="keywords" content="keywords here">
+    
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    
+    <link rel="stylesheet" href="css/base.css" />
+    
+    <!-- scripts at bottom of page -->
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div id="header">
+        <!-- Logo -->
+        <div id="logo"><img src="img/monogram.svg"/></div>
+        <!-- Info Ref -->
+        <div id="info-ref">
+          <h4 class="info-ref">Christopher Baldesarra<br />
+              Graphic Design<br />
+              -<br />
+              Toronto, Canada<br />
+          </h4>
+        </div>
+        <!-- Nav Links -->
+        <div id="nav-links">
+          <h4 class="nav-links">
+            <a href="index.html">Index</a>
+            <a href="about.html">About</a>
+            <a href="http://cbaldesign.tumblr.com" target="_blank">Blog</a>
+          </h4>
+        </div>
+        <!-- Media Links -->
+        <div id="media-links">
+          <img class="icon" src="img/email_icon.png"/>
+          <img class="icon" src="img/facebook_icon.png"/>
+          <img class="icon" src="img/twitter_icon.png"/>
+          <img class="icon" src="img/tumblr_icon.png"/>
+          <img class="icon" src="img/linkdin_icon.png"/>
+        </div>
+      </div><!-- header -->
+
+      <div id="spotlight">
+        <div id="description-header">
+          <h3>Radian Academy Leader</h3>
+        </div>
+        <div id="description-body">
+          <p style="margin-bottom: 20px;">A spin on the classic academy leader countdown. Using layered transparency film and a custom built rig to deconstruct digital form in an analog physical space. 
+          </p>
+        </div>
+        <div id="preview-nav">
+          <!-- <p style="font-size: 1.8rem; word-spacing: 3px; margin-top: 0px;">&larr; - &rarr;</p> -->
+          <p style="margin-top: 0px;"><strong>Motion,</strong> 16:9<br /> <i>2012<i></p>
+        </div>
+        <div id="preview">
+          <iframe class="preview" src="http://player.vimeo.com/video/33014041?color=b566ff" width="680" height="374" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          <img class="preview" src="img/tester_2.jpg"/>
+        </div>
+      </div>
+
+      <div id="container" class="variable-sizes clearfix">
+        
+        <div class="project width2 height3">
+          <img src="img/WEMF_poster_small.jpg"/>
+        </div>
+              
+        <div class="project width3 height1-2">
+          <a class="img" href="radian.html">
+            <img src="img/radian_still.jpg"/>
+          </a>
+        </div>
+           
+        <div class="project width3 height1-2">
+          <img src="img/dura_spec.png"/>
+        </div>
+            
+        <div class="project width2 height3">
+          <img src="img/anon_shout.png"/>
+        </div>
+                      
+        <div class="project width2 height2-2">
+          <img src="img/eating_oil.jpg"/>
+        </div>
+                      
+        <div class="project width1-2 height2">
+          <img src="img/admit_one.jpg"/>
+        </div>
+                     
+        <div class="project width2 height3">
+          <img src="img/career_guide.png"/>
+        </div>        
+              
+        <div class="project width2 height1-2">
+          <img src="img/1945.png"/>
+        </div>
+                      
+        <div class="project width2 height2-2">
+          <img src="img/chiaro.png"/>
+        </div>
+                      
+        <div class="project width2 height2">
+          <img src="img/delve_teal.png"/>
+        </div> 
+      </div> <!-- #container -->
+      
+      <script src="js/jquery-1.7.1.min.js"></script>
+      <script src="jquery.isotope.min.js"></script>
+      <script>
+        $(function(){
+          
+          var $container = $('#container');
+          
+          $container.isotope({
+            itemSelector : '.project',
+            masonry : {
+              columnWidth : 10
+            },
+          });     
+        });
+      </script>
+        
+    </div> <!-- wrapper -->
+    
+  </body>
+</html>
